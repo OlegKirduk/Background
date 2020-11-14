@@ -1,0 +1,91 @@
+/*обнуление*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,header,footer,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,textarea,button{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h3,h5,h6{font-size: inherit; font-weight: 400;}
+
+/*работа над проектом*/
+body{
+    padding: 30px;
+}
+.block1{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    background: url('../img/1.jpg') round;
+}
+
+.block2{
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    background: rgb(254,187,187);
+    background: -moz-linear-gradient(top,  rgb(254,187,187) 0%, rgb(254,144,144) 45%, rgb(255,92,92) 100%);
+    background: -webkit-linear-gradient(top,  rgb(254,187,187) 0%,rgb(254,144,144) 45%,rgb(255,92,92) 100%);
+    background: linear-gradient(to bottom,  rgb(254,187,187) 0%,rgb(254,144,144) 45%,rgb(255,92,92) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 );   
+}
+
+.block3 {
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    background: url('../img/2.jpg') center no-repeat;
+    background-size: contain;
+}
+
+.block4 {
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    background: url('../img/1.jpg'), url('../img/2.jpg'), url('../img/3.jpg');
+    background-color: #ecf012;
+    background-repeat: no-repeat;
+    background-position: left, center, right;
+    background-size: auto 100%;
+    margin: 0 0 30px 0;
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;  
+}
